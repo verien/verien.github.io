@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Verien</title>
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/Chart.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/">Verien</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Skill</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro">
+                <div class="col-sm-12">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h2>Verien</h2>
+                        <h4 class="text-muted">Web Development</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About Me .</h2>
+                    <h3 class="section-subheading text-muted">We’re all traveling through time together, every day of our lives. All we can do is do our best to relish this remarkable ride.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">你好，我住桃園市，今年23歲，資訊管理學系畢業。就學時熱衷於網頁設計，專題時使用Java、Serverlet、Hadoop加上網頁爬蟲做出簡單的電影評論分析網站。自學Rails on Rails半年，為了對程式更加精進曾參加過相關課程，對於網站開發流程，Rails架構與網站部署有一定的理解。
+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Skill .</h2>
+                    <h3 class="section-subheading text-muted">We can complete it step by step however long the road is.</h3>
+                </div>
+            </div>
+            <div id="skillswrap" >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 centered  text-center">
+                            <canvas id="javascript" height="130" width="130"></canvas>
+                            <h4>Ruby on Rails</h4>
+                            <br>
+                            <script>
+                                var doughnutData = [
+                                        {
+                                            value: 50,
+                                            color:"#fed136"
+                                        },
+                                        {
+                                            value : 50,
+                                            color : "black"
+                                        }
+                                    ];
+                                    var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+                            </script>
+                        </div>
+                        <div class="col-lg-3 centered text-center">
+                            <canvas id="bootstrap" height="130" width="130"></canvas>
+                            <h4>Bootstrap</h4>
+                            <br>
+                            <script>
+                                var doughnutData = [
+                                        {
+                                            value: 50,
+                                            color:"#fed136"
+                                        },
+                                        {
+                                            value : 50,
+                                            color : "black"
+                                        }
+                                    ];
+                                    var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+                            </script>
+                        </div>
+                        <div class="col-lg-3 centered text-center">
+                            <canvas id="wordpress" height="130" width="130"></canvas>
+                            <h4>Javascript</h4>
+                            <br>
+                            <script>
+                                var doughnutData = [
+                                        {
+                                            value: 40,
+                                            color:"#fed136"
+                                        },
+                                        {
+                                            value : 60,
+                                            color : "black"
+                                        }
+                                    ];
+                                    var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+                            </script>
+                        </div>
+                        <div class="col-lg-3 centered text-center">
+                            <canvas id="html" height="130" width="130"></canvas>
+                            <h4>HTML/CSS</h4>
+                            <br>
+                            <script>
+                                var doughnutData = [
+                                        {
+                                            value: 60,
+                                            color:"#fed136"
+                                        },
+                                        {
+                                            value : 40,
+                                            color : "black"
+                                        }
+                                    ];
+                                    var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+                            </script>
+                        </div>
+                    </div><!--/.row -->
+                    <br>
+                </div><!--/.container -->
+            </div><!--/ #skillswrap -->
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio .</h2>
+                    <h3 class="section-subheading text-muted">The more we do, the more we can do.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Forum</h4>
+                        <p class="text-muted">Sample Forum</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Bootstrap test</h4>
+                        <p class="text-muted">Responsive</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Verien's shop</h4>
+                        <p class="text-muted">EC Website</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/pak.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Parking Ba!</h4>
+                        <p class="text-muted">hackathon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy;2016 - Verien</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Forum</h2>
+                            <p class="item-intro text-muted">Sample Forum.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
+                            <p>這是作為Ruby on Rails開發練習的第一份作品。主要是對MVC架構的理解和認識，在網站製作中，該功能也經常被拿來使用。</p>
+                            <p>這是我成為RoR工程師的第一步。</p>
+                            <h4><p><a href="https://rails-101-demo-verien.herokuapp.com">rails-101-demo</a></p></h4>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Bootstrap test</h2>
+                            <p class="item-intro text-muted">Responsive.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
+                            <p>對於一個網站來說，經過包裝無疑會帶來許多好處。為了精進Bootstrap套、切版能力而製作的簡易landing-page，其藉由Bootstrap達到可以自動適應不同尺寸的螢幕，增強使用上的觀感。</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Verien's shop</h2>
+                            <p class="item-intro text-muted">EC Website.</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                            <p>這個作品是為了將技術更加進步，而去上課學習後所開發的一個EC網站。這個網站約一個月的時間開發完成，在這開發過程中，我學習到如何將產品依照客戶需求規劃、實作購物車的設計、整合第三方寄信服務，最後串接金流API。</p>
+                            <h4><p><a href="https://verien-shop.herokuapp.com/">Verien's shop</a></p></h4>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Parking Ba!</h2>
+                            <p class="item-intro text-muted">hackathon</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/pak.png" alt="">
+                            <p>這個作品是為了將技術更加進步，參加黑客松後所開發的一個網站。這個網站約一個月的構思設計，最後經由四人合作完成，在這開發過程中，我學習到如何使用免費授權圖片、LandingPage設計、連結JASON資料，最後顯示於網頁上。</p>
+                            <h4><p><a href="https://parkingba.herokuapp.com">Parking Ba!</a></p></h4>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>
